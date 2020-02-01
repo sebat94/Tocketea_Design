@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mis mensajes</title>
+  <link rel="shortcut icon" type="image/png" href="img/tocketea_logo.ico">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="cabecera_izq unselectable">
+      <h1><a href="index.html">Tocketea</a></h1>
+    </div>
+    <div class="cabecera_der">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <a href="index.html"><i class="fa fa-home"></i></a>
+          </li>
+          <li>
+            <a href="nosotros.html">Acerca de</a>
+            <a href="nosotros.html"><i class="fa fa-diamond"></i></a>
+          </li>
+
+          <li class="menu_activo">
+            <div class="dropdown"><span><a href="perfil.html"><i class="fa fa-user-o"></i><span>Daniel López</span></a></span>
+              <div class="dropdown_content">
+                <a href="perfil.html">Mi perfil</a>
+                <a href="mis_mensajes.html">Mis mensajes</a>
+                <a href="mis_eventos.html">Mis eventos</a>
+                <a href="mis_entradas.html">Mis entradas</a>
+                <a href="gestion_usuarios.html">Gestión usuarios</a>
+                <a href="#">Salir</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="main_mis_mensajes">
+    <div class="panel_mis_mensajes">
+
+      <section class="menu_mis_mensajes">
+        <h1>Mensajes</h1>
+        <a href="#" id="nuevoMensaje">Nuevo mensaje</a>
+      </section>
+
+
+
+      <section class="contactos_mis_mensajes">
+
+        <article class="contacto_mis_mensajes">
+          <a href="#">
+            <img src="img/perfil/1.jpg" alt="">
+            <div class="nombre_badge"><span>Daniel López Ruano<i class="badge">122</i></span></div>
+            <span>21/10/2017</span>
+            <div class="desc_mensaje">
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+            </div>
+          </a>
+          <div class="acciones_mensaje">
+            <a href="#" class="reply"><i class="fa fa-reply"></i></a>
+            <a href="#"><i class="fa fa-trash-o"></i></a>
+          </div>
+        </article>
+
+        <article class="contacto_mis_mensajes">
+          <a href="#">
+            <img src="img/perfil/default.png" alt="">
+            <div class="nombre_badge"><span>Julio Martínez<i class="badge">54</i></span></div>
+            <span>22/12/2017</span>
+            <div class="desc_mensaje">
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+            </div>
+          </a>
+          <div class="acciones_mensaje">
+            <a href="#" class="reply"><i class="fa fa-reply"></i></a>
+            <a href="#"><i class="fa fa-trash-o"></i></a>
+          </div>
+        </article>
+
+      </section>
+
+
+
+      <section class="conversacion_mis_mensajes">
+
+        <!-- LEER MENSAJE | En caso de tener mensajes anidados se replicará '.info_mensaje' -->
+        <article class="info_mensaje">
+          <div class="img_info_mensaje">
+            <img src="img/perfil/1.jpg" alt="">
+          </div>
+          <div class="nombre_fecha_mensaje">
+            <span>Daniel López Ruano</span>
+            <span>21/10/2017</span>
+          </div>
+          <div class="contenido_mensaje">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </article>
+
+        <article class="info_mensaje">
+          <div class="img_info_mensaje">
+            <img src="img/perfil/default.png" alt="">
+          </div>
+          <div class="nombre_fecha_mensaje">
+            <span>Julio Martínez</span>
+            <span>16/11/2017</span>
+          </div>
+          <div class="contenido_mensaje">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ex fugit corrupti atque tenetur reprehenderit non vitae minus error repellendus! Delectus doloremque error veritatis, cumque expedita dolorum quisquam natus, doloribus facere quam! Quibusdam a commodi, nostrum, labore quam deserunt quidem.</p>
+          </div>
+        </article>
+
+        <article class="info_mensaje">
+          <div class="img_info_mensaje">
+            <img src="img/perfil/1.jpg" alt="">
+          </div>
+          <div class="nombre_fecha_mensaje">
+            <span>Daniel López Ruano</span>
+            <span>22/12/2017</span>
+          </div>
+          <div class="contenido_mensaje">
+            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </article>
+
+        <!-- CONTESTAR MENSAJE -->
+        <article class="responder_mensaje" id="responderMensaje">
+          <span><strong>De: </strong>dlopru@hotmail.com</span>
+          <span><strong>Para: </strong>julio_martinez@gmail.com</span>
+          <span><strong>RE: </strong>Título del mensaje anterior</span>
+          <form action="" method="post">
+            <label for="responder_mensaje">Responder</label>
+            <textarea name="responder_mensaje" id="responder_mensaje"></textarea>
+            <input type="submit" name="" value="Responder">
+          </form>
+        </article>
+
+        <!-- CREAR MENSAJE -->
+        <article class="crear_mensaje" id="crearMensaje">
+          <form action="index.html" method="post">
+            <div class="remitente_mensaje">
+              <label for="emailRemitente">De: </label>
+              <input type="text" name="emailRemitente" id="emailRemitente" value="dlopru@hotmail.com" disabled>
+            </div>
+            <div class="destinatario_mensaje">
+              <label for="emailDestinatario">Para: </label>
+              <input type="text" name="emailDestinatario" id="emailDestinatario">
+            </div>
+            <div class="tema_mensaje">
+              <label for="temaMensaje">Tema: </label>
+              <input type="text" name="temaMensaje" id="temaMensaje">
+            </div>
+            <div class="mensaje">
+              <label for="contenidoMensaje">Mensaje</label>
+              <textarea name="contenidoMensaje" id="contenidoMensaje"></textarea>
+            </div>
+            <input type="submit" name="" value="Enviar">
+          </form>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/mensajes.js"></script>
+
+</body>
+</html>

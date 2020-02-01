@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Acceder</title>
+  <link rel="shortcut icon" type="image/png" href="img/tocketea_logo.ico">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="cabecera_izq unselectable">
+      <h1><a href="index.html">Tocketea</a></h1>
+    </div>
+    <div class="cabecera_der">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <a href="index.html"><i class="fa fa-home"></i></a>
+          </li>
+          <li>
+            <a href="nosotros.html">Acerca de</a>
+            <a href="nosotros.html"><i class="fa fa-diamond"></i></a>
+          </li>
+          <li class="menu_activo"><a href="acceder.html" id="btn_login"><i class="fa fa-sign-in"></i><span>Acceder</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="login_registro">
+
+      <div class="img_login_registro">
+        <img src="img/web/1.jpg" alt="">
+      </div>
+
+      <div class="contenedor_login_registro">
+        <div class="bloque_contenedor">
+
+            <article class="info_login_registro">
+
+
+              <section class="ir_registro" id="info_registro">
+                <h2>¿No tienes una cuenta?</h2>
+                <p>Date del alta ahora y disfruta de todas las ventajas que te ofrecemos en Tocketea.</p>
+                <div class="btn_ir_registro" id="btn_ir_registro">Regístrate</div>
+              </section>
+
+
+              <section class="ir_login" id="info_login">
+                <h2>¿Tienes una cuenta?</h2>
+                <p>A que esperas para entrar y seguir disfrutando de tus eventos favoritos en Tocketea.</p>
+                <div class="btn_ir_login" id="btn_ir_login">Login</div>
+              </section> <!-- Se mostrará cuando estemos en el registro -->
+
+
+              <section class="form_login_registro" id="carta_login_registro">
+
+                <!-- FORMULARIO LOGIN -->
+                <article class="contenido_login" id="form_login">
+                  <h1>Login</h1>
+                  <form method="post">
+
+
+                        <!-- MENSAJE ERROR LOGIN -->
+                        <!--<div class="mensaje_error_login_registro">
+                          <span>Email o contraseña incorrectos</span>
+                          <i class="fa fa-caret-down"></i>
+                        </div>-->
+                        <!-- ******************** -->
+
+
+                    <div class="login_email">
+                      <input type="email" placeholder="Email" name="emailLogin" id="emailLogin" tabindex="1" required>
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="login_password">
+                      <input type="password" placeholder="Contraseña" name="passwordLogin" id="passwordLogin" tabindex="2" required>
+                      <i class="fa fa-lock"></i>
+                    </div>
+
+                    <div class="login_enviar">
+                      <a href="#">Recuperar contraseña</a>
+                      <input type="submit" tabindex="3" value="LOGIN">
+                    </div>
+
+                    <div class="ir_registro2" id="ir_registro2"><span>Regístrate</span></div>
+
+                  </form>
+                </article>
+                <!-- FIN FORMULARIO LOGIN -->
+
+                <!-- FORMULARIO REGISTRO -->
+                <article class="contenido_registro" id="form_registro">
+                  <h1>Registro</h1>
+                  <form method="post">
+
+
+                          <!-- MENSAJE ERROR REGISTRO -->
+                          <!--<div class="mensaje_error_login_registro">
+                            <span>Introduce los datos <u>corréctamente</u>
+                            <div>
+                              <ul>
+                                <li>Correo incorrecto</li>
+                                <li>Contraseña incorrecta</li>
+                                <li>El nombre no puede contener caracteres especiales</li>
+                              </ul>
+                            </div>
+                            </span>
+                            <i class="fa fa-caret-down"></i>
+                          </div>-->
+                          <!-- ************************* -->
+
+
+                    <div class="registro_nombre">
+                      <input type="text" placeholder="Nombre completo" name="nombreRegistro" id="nombreRegistro">
+                      <i class="fa fa-user-circle-o"></i>
+                    </div>
+
+                    <div class="registro_provincia">
+                      <select name="provinciaRegistro">
+                        <option selected="selected" value="" disabled="disabled" hidden="hidden">Provincia</option>
+                        <option value="1">Alicante</option>
+                        <option value="2">Valencia</option>
+                        <option value="3">Castellón</option>
+                      </select>
+                      <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div class="registro_email">
+                      <input type="email" placeholder="Email" name="emailRegistro" id="emailRegistro">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+
+                    <div class="registro_password">
+                      <input type="password" placeholder="Contraseña" name="passwordRegistro" id="passwordRegistro">
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <div class="registro_password">
+                      <input type="password" placeholder="Repetir contraseña" name="repeatPasswordRegistro" id="repeatPasswordRegistro">
+                      <i class="fa fa-lock"></i>
+                    </div>
+
+                    <div class="registro_enviar">
+                      <input type="submit" tabindex="6" value="REGISTRARME">
+                    </div>
+
+                    <div class="ir_login2" id="ir_login2"><span>LOGIN</span></div>
+
+                  </form>
+                </article>
+                <!-- FIN FORMULARIO REGISTRO -->
+
+              </section><!-- form_login_registro -->
+            </article><!-- info_login_registro -->
+
+          </div><!-- bloque_contenedor -->
+      </div><!-- contenedor_login_registro -->
+    </section><!-- login_registro -->
+
+
+    <script type="text/javascript" src="js/login_registro.js"></script>
+
+</body>
+</html>

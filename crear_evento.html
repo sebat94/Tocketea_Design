@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crear evento</title>
+  <link rel="shortcut icon" type="image/png" href="img/tocketea_logo.ico">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="cabecera_izq unselectable">
+      <h1><a href="index.html">Tocketea</a></h1>
+    </div>
+    <div class="cabecera_der">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <a href="index.html"><i class="fa fa-home"></i></a>
+          </li>
+          <li>
+            <a href="nosotros.html">Acerca de</a>
+            <a href="nosotros.html"><i class="fa fa-diamond"></i></a>
+          </li>
+
+          <li class="menu_activo">
+            <div class="dropdown"><span><a href="perfil.html"><i class="fa fa-user-o"></i><span>Daniel López</span></a></span>
+              <div class="dropdown_content">
+                <a href="perfil.html">Mi perfil</a>
+                <a href="mis_mensajes.html">Mis mensajes</a>
+                <a href="mis_eventos.html">Mis eventos</a>
+                <a href="mis_entradas.html">Mis entradas</a>
+                <a href="gestion_usuarios.html">Gestión usuarios</a>
+                <a href="#">Salir</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="main_crear_evento">
+    <div class="bloque_contenedor">
+
+      <section class="form_crear_evento">
+        <h1>Crear evento</h1>
+        <form action="" method="post">
+          <div class="titulo_crear_evento">
+            <div>
+              <label for="titulo">Título*</label>
+              <input type="text" name="" id="titulo">
+              <i class="fa fa-heart-o"></i>
+            </div>
+            <div>
+              <label for="categoria">Categoría*</label>
+              <select name="" id="localizacion">
+                <option selected="selected" disabled="disabled" hidden="hidden"></option>
+                <option value="">Categoría 1</option>
+                <option value="">Categoría 2</option>
+                <option value="">Categoría 3</option>
+              </select>
+              <i class="fa fa-sort-amount-asc"></i>
+              <span class="fa fa-caret-down"></span>
+            </div>
+          </div>
+          <div class="rango_fechas_crear_evento">
+            <div>
+              <label for="fechaIni">Venta de entradas desde*</label>
+              <input type="date" name="" id="fechaIni">
+              <i class="fa fa-calendar"></i>
+            </div>
+            <div>
+              <label for="fechaFin">Hasta*</label>
+              <input type="date" name="" id="fechaFin">
+              <i class="fa fa-calendar"></i>
+            </div>
+          </div>
+          <div class="fecha_hora_crear_evento">
+            <div>
+              <label for="fechaEvt">Fecha celebración*</label>
+              <input type="date" name="" id="fechaEvt">
+              <i class="fa fa-calendar"></i>
+            </div>
+            <div>
+              <label for="horaEvt">Hora celebración*</label>
+              <input type="time" name="" id="horaEvt">
+              <i class="fa fa-clock-o"></i>
+            </div>
+          </div>
+          <div class="localizacion_crear_evento">
+            <div>
+              <label for="localizacion">Provincia*</label>
+              <select name="" id="localizacion">
+                <option selected="selected" disabled="disabled" hidden="hidden"></option>
+                <option value="">Alicante</option>
+                <option value="">Valencia</option>
+                <option value="">Castellón</option>
+              </select>
+              <i class="fa fa-location-arrow"></i>
+              <span class="fa fa-caret-down"></span>
+            </div>
+            <div>
+              <label for="direccion">Dirección*</label>
+              <input type="text" name="" id="direccion">
+              <i class="fa fa-map-marker"></i>
+            </div>
+          </div>
+          <div class="num_entradas_crear_evento">
+            <div>
+              <label for="totalEntradas">Total de entradas*</label>
+              <input type="number" min="0" name="" id="totalEntradas">
+              <i class="fa fa-ticket"></i>
+            </div>
+            <div>
+              <label for="precioEntradas">Precio entradas*</label>
+              <input type="number" min="0" name="" id="precioEntradas">
+              <i class="fa fa-money"></i>
+            </div>
+          </div>
+          <div class="imagen_enlace_crear_evento">
+            <div>
+              <label for="imagen">Imagen*</label>
+              <input type="file" name="" id="imagen">
+              <i class="fa fa-file-image-o"></i>
+            </div>
+            <div>
+              <label for="enlaceExterno">Enlace externo</label>
+              <input type="text" name="" id="enlaceExterno">
+              <i class="fa fa-link"></i>
+            </div>
+          </div>
+          <div class="descripcion_crear_evento">
+            <label for="Descripcion">Descripción evento*</label>
+            <textarea name="name" id="Descripcion"></textarea>
+            <i class="fa fa-align-left"></i>
+          </div>
+          <div class="btn_crear_evento">
+            <input type="submit" name="" value="Crear evento">
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>
